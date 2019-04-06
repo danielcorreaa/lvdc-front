@@ -1,0 +1,3 @@
+<app-search (onTyping)="filter = $event"></app-search>
+
+<app-filmes [filmes]="filmes | filterByDescription: filter"></app-filmes>

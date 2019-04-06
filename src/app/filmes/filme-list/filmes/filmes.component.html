@@ -1,0 +1,14 @@
+<p class="text-center text-muted" *ngIf="!filmes.length">
+        Sorry, no Filmes
+ </p>
+<ol class="list-unstyled">
+    <li *ngFor="let cols of rows" class="row">
+        <div *ngFor="let filme of cols" class="col-2" darkOnHouver>
+          <app-filme            
+              [url]="filme.img" 
+              [description]="filme.titulo">
+          </app-filme> 
+        </div>
+    </li>
+</ol>
+       
